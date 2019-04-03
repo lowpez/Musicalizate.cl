@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Musicalizate | La Primera plataforma educativa para la Industria Creativa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="musicalizate.css">
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+//<![CDATA[ 
+function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+//]]> 
+</script>
+</head>
+<body>
+<header class="container-fluid h-100">
+    <div class="row h-100">
+    	<div class="col-12 col-md-7  h-100 background"><!-- BACKGROUNDS -->
+        	<div class="gradient h-100">
+            <span class="social">
+            <i class="fab fa-facebook-f"></i> 
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+             </span>
+            </div>
+        </div><!-- BACKGROUNDS -->
+        <div class="col-12 col-md-5" ><!-- INFO --> 
+<div class="jumbotron" style="background-color: transparent !important;"  >
+<img src="logo.png" class="img-fluid mx-auto d-block mb-4 tlogo" alt="logo Musicalizate" />
+	
+    <p class="lead-1 mt-4"><strong>Musicalizate</strong> es la Primera Gran Plataforma de E-learning creada por y para la Industria Musical.
+    <br /><span><a href="" data-href="sobre">+info</a></span></p>
+   <!--<h3 class="mt-1 mb-1 text-center">Estamos llegando  </h3> -->
+  
+		<form id="ajax-contact" method="post" action="send.php" >
+        <div id="form-messages"></div>
+        <div class="form-group p-0 mb-0 mt-xs-4 text-center">
+  <input type="email" id="email" name="email" required class="form-control mx-auto form-rounded" placeholder="Ingresa tu e-mail" />
+<input type="submit" class="btn btn-warning mt-3 text-center" value="Subscribir" id="signup" />
+</div>
+</form>
+ 
+ 
+</div>
+ 
+    </div><!-- /INFO -->
+ 
+     
+    </div>
+    </header>
+    
+    <main id="sobre" class="container-fluid pt-5 mt-4">
+    	<div class="row">
+        	 <div class="col-sm-12 col-md-8 mx-auto pl-4 pr-5"   data-type="content" >
+    <h1 class="display-5 mb-5">Cualquiera que sea su objetivo, te llevaremos.</h1>
+<p class="lead">Buscamos fomentar la creación de redes a través de procesos de formacion que propicien la autogestión, la creación de negocios y la internacionalización de proyectos musicales.</p>
+<p class="lead">Podrás contar con mentores nacionales e internacionales que te ayudarán a tener una visión global  de lo que necesitas para ser parte de las gestion comercial de un proyecto musical, junto al perfeccionamiento mejorar tu técnica instrumental, vocal y puesta en escena. </p>
+<p class="lead">Se parte de esta red e inscríbete antes del lanzamiento oficial para disfrutar de los primeros cursos y conferencias totalmente gratuitas.</p>
+    
+    <div class="media border-0 p-3 float-right"><!-- FIRMA -->
+  <img src="https://i.imgur.com/WpuKpKq.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:70px;">
+  <div class="media-body">
+    <img src="https://i.imgur.com/WwoBlsz.png" class=" img-fluid"  style="max-height:80px;" alt="" />
+  </div>
+</div><!-- / FIRMA -->
+    </div>
+    
+        </div>
+        
+        
+    </main>
+<script>
+var images = [
+  'https://media.giphy.com/media/xUA7aPoU3kaeUXKCM8/giphy.gif',
+'https://media.giphy.com/media/3o7btPYxwGqjj10vJK/giphy.gif',
+'https://media.giphy.com/media/xUA7aWFJJslAQFxHfG/giphy.gif',
+'https://media.giphy.com/media/82REY2f0AI4ZZ3SGAf/giphy.gif'
+];
+var img = document.querySelector('.background');
+var index = 0;
+var iterations = 0;
+var updateImage = function() {
+   if (index >= images.length) {
+    index = 0;
+    iterations++;
+  }
+  
+  img.style.backgroundImage = 'url(' + images[index] + ')';
+  index++;
+}
+var interval = setInterval(updateImage, 3500);
+updateImage();
+ 
+ 
+WebFontConfig = {
+    	google: { families: [ 'Poppins:400,500,600,700,800', 'Open+Sans:300,400,700' ] }
+  };
+  	(function() {
+    	var wf = document.createElement('script');
+    	wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    	wf.type = 'text/javascript';
+    	wf.async = 'true';
+    	var s = document.getElementsByTagName('script')[0];
+    	s.parentNode.insertBefore(wf, s);
+  	})(); 
+</script>
+<script src="js.js"></script>
+<link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+</body>
+</html>
